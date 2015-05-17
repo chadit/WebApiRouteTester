@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiRouteTester", "src\WebApiRouteTester\WebApiRouteTester.csproj", "{BFB7CE0A-38CB-42FC-BCCA-6D200E75490E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiRouteTesterTests", "src.test\WebApiRouteTesterTests\WebApiRouteTesterTests.csproj", "{8AF3CC7C-B1D8-4FA8-8B8A-0FECA7F856C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{AD77B4CE-2308-466A-8ACE-A41F16CBA829}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockClass", "src.test\MockClass\MockClass.csproj", "{43E5B162-8CB0-4B52-A93B-0CA8B04B02C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFB7CE0A-38CB-42FC-BCCA-6D200E75490E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB7CE0A-38CB-42FC-BCCA-6D200E75490E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB7CE0A-38CB-42FC-BCCA-6D200E75490E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB7CE0A-38CB-42FC-BCCA-6D200E75490E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF3CC7C-B1D8-4FA8-8B8A-0FECA7F856C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF3CC7C-B1D8-4FA8-8B8A-0FECA7F856C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF3CC7C-B1D8-4FA8-8B8A-0FECA7F856C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF3CC7C-B1D8-4FA8-8B8A-0FECA7F856C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43E5B162-8CB0-4B52-A93B-0CA8B04B02C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E5B162-8CB0-4B52-A93B-0CA8B04B02C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E5B162-8CB0-4B52-A93B-0CA8B04B02C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E5B162-8CB0-4B52-A93B-0CA8B04B02C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8AF3CC7C-B1D8-4FA8-8B8A-0FECA7F856C7} = {AD77B4CE-2308-466A-8ACE-A41F16CBA829}
+		{43E5B162-8CB0-4B52-A93B-0CA8B04B02C7} = {AD77B4CE-2308-466A-8ACE-A41F16CBA829}
+	EndGlobalSection
+EndGlobal
