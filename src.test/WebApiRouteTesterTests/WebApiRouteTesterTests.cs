@@ -14,15 +14,14 @@ namespace WebApiRouteTesterTests
 		public void TestInit()
 		{
 			var controller = new MockUserController {Configuration = new HttpConfiguration()};
-			controller.Configuration.Routes.MapHttpRoute("DefaultApi", "api/{controller}/{id}", new { id = RouteParameter.Optional }
-			);
+			controller.Configuration.Routes.MapHttpRoute("DefaultApi", "api/{controller}/{id}", new { id = RouteParameter.Optional });
 		}
 
 		[TestMethod]
 		public void MockUserController_VerifyGet_True()
 		{
 			const string requestUrl = "http://localhost/user";
-			Assert.IsTrue(requestUrl.DoesRouteMapTo<MockUserController>("Get", HttpMethod.Get));
+			Assert.IsTrue(requestUrl.DoesRouteMapTo<MockUserController>("Get", HttpMethod.Get, "DefaultApi", "api/{controller}/{id}", new { id = RouteParameter.Optional }));
 		}
 
 		[TestMethod]
